@@ -1,0 +1,11 @@
+KaleidoScope \
+    --mode kmanager_single \
+    --vfile ../../verilog/s27_scan.v \
+    --clkdef ./Inputs/s27_scan.clks \
+    --alarm ./Inputs/s27_scan.alarms \
+    --fault_list ./Inputs/s27_scan.faults \
+    --top s27_scan \
+    --error_inject_inst TOP.s27_scan \
+    --sim_vcd ./Inputs/s27_scan_vcd.f \
+    --ini parser_messages=true \
+    --ini dft=true

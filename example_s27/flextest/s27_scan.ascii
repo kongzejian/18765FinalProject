@@ -1,0 +1,192 @@
+SETUP =
+	TEST_CYCLE_WIDTH=2;
+     DECLARE INPUT BUS "ibus" = "/CK", "/scan_en", "/scan_in", "/G0", "/G1", "/G2", "/G3";
+
+     DECLARE OUTPUT BUS "obus" = "/scan_out", "/G17";
+
+
+END;
+CYCLE_TEST =
+
+    CYCLE = 0;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 1;
+    force   "ibus" "011XXXX" 0;
+    force   "ibus" "111XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 2;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 3;
+    force   "ibus" "00X1101" 0;
+    force   "ibus" "10X1101" 1;
+    measure "obus" "11" 2;
+
+    CYCLE = 4;
+    force   "ibus" "011XXXX" 0;
+    force   "ibus" "111XXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 5;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "1X" 2;
+
+    CYCLE = 6;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 7;
+    force   "ibus" "00X1001" 0;
+    force   "ibus" "10X1001" 1;
+    measure "obus" "11" 2;
+
+    CYCLE = 8;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 9;
+    force   "ibus" "011XXXX" 0;
+    force   "ibus" "111XXXX" 1;
+    measure "obus" "1X" 2;
+
+    CYCLE = 10;
+    force   "ibus" "011XXXX" 0;
+    force   "ibus" "111XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 11;
+    force   "ibus" "00X0000" 0;
+    force   "ibus" "10X0000" 1;
+    measure "obus" "01" 2;
+
+    CYCLE = 12;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 13;
+    force   "ibus" "011XXXX" 0;
+    force   "ibus" "111XXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 14;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 15;
+    force   "ibus" "00X1110" 0;
+    force   "ibus" "10X1110" 1;
+    measure "obus" "01" 2;
+
+    CYCLE = 16;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 17;
+    force   "ibus" "011XXXX" 0;
+    force   "ibus" "111XXXX" 1;
+    measure "obus" "1X" 2;
+
+    CYCLE = 18;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 19;
+    force   "ibus" "00X0010" 0;
+    force   "ibus" "10X0010" 1;
+    measure "obus" "00" 2;
+
+    CYCLE = 20;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "1X" 2;
+
+    CYCLE = 21;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 22;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 23;
+    force   "ibus" "00X0010" 0;
+    force   "ibus" "10X0010" 1;
+    measure "obus" "01" 2;
+
+    CYCLE = 24;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 25;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 26;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 27;
+    force   "ibus" "00X1001" 0;
+    force   "ibus" "10X1001" 1;
+    measure "obus" "00" 2;
+
+    CYCLE = 28;
+    force   "ibus" "011XXXX" 0;
+    force   "ibus" "111XXXX" 1;
+    measure "obus" "1X" 2;
+
+    CYCLE = 29;
+    force   "ibus" "011XXXX" 0;
+    force   "ibus" "111XXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 30;
+    force   "ibus" "010XXXX" 0;
+    force   "ibus" "110XXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 31;
+    force   "ibus" "00X0111" 0;
+    force   "ibus" "10X0111" 1;
+    measure "obus" "00" 2;
+
+    CYCLE = 32;
+    force   "ibus" "01XXXXX" 0;
+    force   "ibus" "11XXXXX" 1;
+    measure "obus" "1X" 2;
+
+    CYCLE = 33;
+    force   "ibus" "01XXXXX" 0;
+    force   "ibus" "11XXXXX" 1;
+    measure "obus" "0X" 2;
+
+    CYCLE = 34;
+    force   "ibus" "01XXXXX" 0;
+    force   "ibus" "11XXXXX" 1;
+    measure "obus" "XX" 2;
+
+    CYCLE = 35;
+    force   "ibus" "00XXXXX" 0;
+    force   "ibus" "10XXXXX" 1;
+    measure "obus" "XX" 2;
+
+
+end;
